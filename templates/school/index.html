@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <style media="screen">
+    
+  body{
+    background-image: url(../static/screenshots/bg3.jpeg);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+    .alert {
+      margin: 0px;
+    }
+
+   
+    .Welcome{
+    font-size: 20px;
+   
+    display: flex;
+    justify-content: center;
+    
+    
+   
+    }
+
+
+    .user-type{
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+
+    }
+
+    .user-type a{
+     
+      padding: 10px;
+      border-radius: 10px;
+      background-color: rgb(68, 113, 217);
+      outline: none;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+     
+    }
+
+
+    .home{
+      display: flex;
+      flex-direction: row;
+     background-color:#f9f9f9;
+
+      height: 390px;
+      width: 900px;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid white ;
+  border-top-left-radius: 80px;
+  border-bottom-right-radius:80px ;
+
+    }
+    .home img{
+      font-size: 60px;
+    }
+   .img-section{
+    border-bottom-right-radius:80px ;
+    margin-left: 90px;
+   }
+.right-content{
+  display: flex;
+flex-direction: column;
+}
+
+
+   
+
+   
+  </style>
+
+</head>
+
+<body>
+ 
+  <br><br><br>
+
+  <div class="home">
+<div class="right-content">
+  <div><img src="../static/screenshots/logo5.png"  alt=""></div>
+  <div>
+    
+     
+    <h1 class="Welcome">Select User Type</h1>
+  
+    <div class="user-type">
+    
+      <a href="/adminclick" >Admin</a>
+      <a href="/teacherclick" >Teacher</a>
+      <a href="/studentclick" >Student</a>
+  </div>
+  </div>
+</div>
+<div >
+  <img class="img-section" src="../static/screenshots/school.jpeg" width="400px" height="400px" alt="">
+</div>
+</div>
+  
+  <br><br><br>
+  
+ 
+
+
+</body>
+
+</html>
